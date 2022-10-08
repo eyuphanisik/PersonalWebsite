@@ -23,9 +23,11 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js"]
           },
           "configurations": {
             "production": {
@@ -62,6 +64,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "port": 8080
+          },
           "configurations": {
             "production": {
               "browserTarget": "mySite:build:production"
@@ -90,6 +95,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -99,6 +105,6 @@
     }
   },
   "cli": {
-    "analytics": "8f81c70d-1fe8-488d-997d-545680b11e4b"
+    "analytics": "4f9a50e8-64d7-41f4-9f20-bbc14f3ac55f"
   }
 }
