@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>Düzenle</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill" style="width: 500px; height: 300px;">
+    <textarea style="width: 500px; height: 250px;" [(ngModel)]="data">{{data}}</textarea>   
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial  >Save</button>
+</div>

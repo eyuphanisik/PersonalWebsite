@@ -1,0 +1,9 @@
+<div>
+    <div class="btn-group col-md-1" role="group" aria-label="Basic mixed styles example" *ngIf="isAdminLogin()">
+        <button type="button" class="btn btn-outline-warning buttonEdit" (click)="openSummary()">Metni Düzenle</button>
+    </div>
+    <div class="row">
+        <div class="col-md-4 img"> <img src="assets/image/67931.jpg" width="200" height="300"></div>
+        <div class="col-md-7"><textarea readonly class="textarea">{{contact}}</textarea></div>
+    </div>
+</div>

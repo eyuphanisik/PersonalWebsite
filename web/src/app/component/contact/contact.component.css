@@ -1,0 +1,14 @@
+.buttonEdit{
+    margin-left : 1300px;
+}
+.img{
+    padding-left: 70px;
+    padding-bottom: 80px;
+}
+.textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    width: 800px;
+    height: 400px;
+}

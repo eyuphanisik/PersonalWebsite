@@ -1,0 +1,22 @@
+<div class="btn-group" style="padding-left: 1230px ;" *ngIf="isAdmin" role="group" aria-label="Basic mixed styles example">
+  <button type="button" class="btn btn-success" (click)="addToBlog()">Ekle</button>
+</div>
+<div class="row row-cols-1 row-cols-md-2 g-4 space">
+<div class="card mb-3 sagIcerikAlani" *ngFor="let item of blogs">
+    <div class="row ">
+      <div class="col-md-4">
+        <img src="..." class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body ">
+          <h5 class="card-title">{{item.title}}</h5>
+          <p class="card-text">{{item.summary}}</p>
+          <p class="card-text"><small class="text-muted">{{item.lastUpdateDate}}</small></p>
+          <button *ngIf="isAdmin" type="button" class="btn btn-warning" (click)="openDialog(item)"><mat-icon>edit</mat-icon></button>
+          <button *ngIf="isAdmin" type="button" class="btn btn-danger" (click)="deleteItem(item)"><mat-icon>delete</mat-icon> </button>
+          <button type="button" class="btn btn-success" [routerLink]="[item.title]">İçeriği görüntüle </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

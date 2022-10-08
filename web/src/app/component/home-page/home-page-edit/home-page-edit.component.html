@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Düzenle</h1>
+<div mat-dialog-content>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label >Yetenek adı</mat-label>
+      <input matInput [(ngModel)]="ability.name" >
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Yüzde</mat-label>
+      <input matInput [(ngModel)]="ability.percent">
+    </mat-form-field>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="ability" cdkFocusInitial>Save</button>
+</div>

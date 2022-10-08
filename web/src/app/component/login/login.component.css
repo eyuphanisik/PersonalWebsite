@@ -1,0 +1,17 @@
+.center{
+    padding-left: 600px;
+    padding-top: 100px;
+    margin-top: center;
+    max-width: 900px;
+}
+.box{
+    width: 400px;
+    background-color: #cccc;
+    padding: 40px;
+    text-align: left;
+    margin: auto;
+    margin-top: 5%;
+}
+.button{
+    margin-left: 250px;
+}
