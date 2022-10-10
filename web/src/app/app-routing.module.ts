@@ -8,7 +8,7 @@ import { LoginComponent } from './component/login/login.component';
 import { BlogComponent } from './component/blog/blog.component';
 
 const routes: Routes = [{ path: "", component: HomePageComponent },
-{ path: "blog", component: BlogCardComponent },
+//{ path: "blog", component: BlogCardComponent },
 { path: "iletisim", component: ContactComponent },
 { path: "hakkımda", component: AboutMeComponent },
 { path: "admin", component: LoginComponent },

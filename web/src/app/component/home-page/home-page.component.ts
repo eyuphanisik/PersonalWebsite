@@ -12,7 +12,7 @@ import { HomePageTextEditComponent } from './home-page-text-edit/home-page-text-
 })
 export class HomePageComponent implements OnInit {
   isAdmin: boolean;
-  summary : string = "merhaba dünya";
+  summary : Text;
   abilities : ability[] = [{name:"java", percent : 100},
                           {name:"angular", percent : 80}]
   constructor(public dialog: MatDialog) {  }
@@ -57,13 +57,13 @@ export class HomePageComponent implements OnInit {
     }); 
   }
   openSummary(){
-    let summaryClone : string = structuredClone(this.summary)
+    let summaryClone : Text = structuredClone(this.summary)
     const dialogRef = this.dialog.open(HomePageTextEditComponent, {
       width: 'auto',
       data: summaryClone,
 
     });
-    dialogRef.afterClosed().subscribe((result : string) => {
+    dialogRef.afterClosed().subscribe((result : Text) => {
       if(result != null){
         this.summary  = result;
       }

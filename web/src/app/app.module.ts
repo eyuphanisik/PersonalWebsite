@@ -54,7 +54,7 @@ import { BlogComponent } from './component/blog/blog.component'
     MatFormFieldModule,
     MatInputModule,
     MatRippleModule,
-    
+    MatIconModule
   ],
   providers: [MatDialog, Overlay, NgbActiveModal],
   bootstrap: [AppComponent]

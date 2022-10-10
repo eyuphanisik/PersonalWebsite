@@ -4,14 +4,15 @@
         <button type="button" class="btn btn-outline-warning buttonEdit" (click)="openSummary()">Metni Düzenle</button>
     </div>
     <div class="row">
-        <div class="col-md-4 img"> <img src="assets/image/67931.jpg" width="200" height="300"></div>
-        <div class="col-md-7"> {{summary}}
+        <div class="col-md-3 img"> <img src="assets/image/67931.jpg" width="200" height="300"></div>
+        <div class="col-md-5"> <textarea readonly class="textarea">{{summary}}</textarea> </div>
+        <div class="col-md-3"> Bilinenler 
             <div *ngFor="let ability of abilities">
-                <div>{{ability.name}}</div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-danger progress" role="progressbar"
-                        ria-label="Danger striped example" [style.width.%]="ability.percent" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100"> %{{ability.percent}}</div>
+                <br>
+                <div> {{ability.name}}</div>
+                <div class="progress-bar progress-bar-striped bg-danger progress" role="progressbar"
+                    ria-label="Danger striped example" [style.width.%]="ability.percent" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100"> %{{ability.percent}}
                 </div>
                 <div class="btn-group buttonGroup" *ngIf="isAdmin" role="group" aria-label="Basic mixed styles example">
                     <button type="button" class="btn btn-danger" (click)="deleteItem(ability)">
@@ -25,4 +26,10 @@
         </div>
 
     </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<div style="text-align: center;"><a href="https://github.com/eyuphanisik" target="_blank" class="fa fa-github zoom" >
+</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/eyüphan-işık-7855301a1/" target="_blank"><i class="fa fa-linkedin zoom" ></i></a></div>
 </div>
